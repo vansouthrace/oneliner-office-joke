@@ -1,6 +1,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-const ENTRY = "I put 'quick sync' on the calendar and now three departments are in a room arguing about what 'quick' means.";
+// One-line office joke, at most 200 characters.
+const joke = "I told HR my spirit animal is the office printer: I only work when nobody's watching, and I jam under pressure.";
 
 mkdirSync("/output", { recursive: true });
-writeFileSync("/output/entry.txt", ENTRY);
+writeFileSync("/output/entry.txt", joke);
